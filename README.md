@@ -55,6 +55,41 @@ A modular, rate-limited API platform supporting user authentication, subscriptio
 
 -    Queue: Run workers with php artisan queue:work for asynchronous tasks.
 
+## Checking and Running Api
+
+        ```bash
+        curl --location 'http://localhost:8000/api/register' \
+        --header 'Content-Type: application/json' \
+        --data-raw '{
+        "name": "siva",
+        "email": "siva21@gmail.com",
+        "password": "Test@123",
+        "password_confirmation": "Test@123",
+        "subscription_tier": "free"
+        }'
+
+        ```bash
+        curl --location 'http://localhost:8000/api/login' \
+        --header 'Content-Type: application/json' \
+        --data-raw '{
+            "email": "siva@gmail.com",
+            "password": "Test@123"
+        }'
+
+        ```bash
+        curl --location 'http://localhost:8000/api/data' \
+        --header 'Authorization: Bearer YOUR_API_TOKEN'
+
+        ```bash
+        curl --location 'http://localhost:8000/api/usage-summary' \
+        --header 'Authorization: Bearer YOUR_API_TOKEN'
+
+        ```bash
+        curl --location 'http://localhost:8000/api/billing-summary' \
+        --header 'Authorization: Bearer YOUR_API_TOKEN'
+
+
+
 ## Setup
 
 ```bash
