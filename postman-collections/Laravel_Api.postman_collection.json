@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "5fd769fd-4409-4019-9a55-15f3d78ef487",
+		"name": "Laravel_Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24530423"
+	},
+	"item": [
+		{
+			"name": "Register_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"javith Mohamed\",\n    \"email\": \"javit44@gmail.com\",\n    \"password\": \"Test@123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"mohamed@gmail.com\",\n    \"password\": \"Test@123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "14|23XITxjmNZiMh3fXhYZicoWsvxRIr0mXV7a6nN9U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Usage_summary",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiNDE3Y2I2YmU2ZGQ0YzhhOTA4MTVkOTBhYTViZjc1ZTVjY2ZkMzM3YmVhMzVjZDdiMTZmM2NiZGZmYzBhNjA5MTgzM2JlYzczZDNlNWZmNTMiLCJpYXQiOjE3NTA1OTMwMzEuMDEyNzI3LCJuYmYiOjE3NTA1OTMwMzEuMDEyNzI4LCJleHAiOjE3ODIxMjkwMzEuMDEwNzQ5LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.MnIYPEF64xwQieJGqRVBjniwO_CkPv9sKwk7b6wt7PPvso1F6vuBf0gJlnmElyYcK-tD8yts11qMsEEozLztPOGV_ygb9pchfqkgu6IH_lvjEci20Qjmk7LP8mbCi6fESuha411LN-vEs-phkiNGqR64GoEbBgjqVhslVucXHttkozWvOVpwzJ_CcgbYwi63W60nfgz_MBDbOGUu6Rea7pVmVysvFHmwpk3IiJiO8YFlWr4Sxk9iIuc44pY8Ej1A6Q8WEKChMh1izCUdyu3eBfdg8de2XM5AgpXguoCjdXm5zL-QCCSt-cflCyeEoQUYr30vf8DdnPqJacUQWs4dfb8bBEUiTPCDns3Zk4XrJCYWND6yVOpmKomAD5SIRBFwP1_od1JZYrymA9wvRBH95qkn9UGWK7CGqnsnnj1tXD3OcKP4JSZl__vjhvur9uIxooSjWaFvVJgj023qL4V32b2Nf6exy2lBF4J71-nN7z1iPpkKcfjHf22d18EmQhE6UvtBnlF0OcnfUs315QJPhTB8OyrVrONS9s_ELaUgj3VsOuvNjo-k0P-4JSFCWJ_iRKk6UuWiK_SUh3MKHpCb5REQsIjo5HEZEb4Mz_aqbNKULDp3cEAG0RWmA_avLX_bHFhWs1R9omGX3lM9WDojkZnb3-wBO4ooqSYflXweHmU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/usage-summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"usage-summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Billing_summary",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiNDE3Y2I2YmU2ZGQ0YzhhOTA4MTVkOTBhYTViZjc1ZTVjY2ZkMzM3YmVhMzVjZDdiMTZmM2NiZGZmYzBhNjA5MTgzM2JlYzczZDNlNWZmNTMiLCJpYXQiOjE3NTA1OTMwMzEuMDEyNzI3LCJuYmYiOjE3NTA1OTMwMzEuMDEyNzI4LCJleHAiOjE3ODIxMjkwMzEuMDEwNzQ5LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.MnIYPEF64xwQieJGqRVBjniwO_CkPv9sKwk7b6wt7PPvso1F6vuBf0gJlnmElyYcK-tD8yts11qMsEEozLztPOGV_ygb9pchfqkgu6IH_lvjEci20Qjmk7LP8mbCi6fESuha411LN-vEs-phkiNGqR64GoEbBgjqVhslVucXHttkozWvOVpwzJ_CcgbYwi63W60nfgz_MBDbOGUu6Rea7pVmVysvFHmwpk3IiJiO8YFlWr4Sxk9iIuc44pY8Ej1A6Q8WEKChMh1izCUdyu3eBfdg8de2XM5AgpXguoCjdXm5zL-QCCSt-cflCyeEoQUYr30vf8DdnPqJacUQWs4dfb8bBEUiTPCDns3Zk4XrJCYWND6yVOpmKomAD5SIRBFwP1_od1JZYrymA9wvRBH95qkn9UGWK7CGqnsnnj1tXD3OcKP4JSZl__vjhvur9uIxooSjWaFvVJgj023qL4V32b2Nf6exy2lBF4J71-nN7z1iPpkKcfjHf22d18EmQhE6UvtBnlF0OcnfUs315QJPhTB8OyrVrONS9s_ELaUgj3VsOuvNjo-k0P-4JSFCWJ_iRKk6UuWiK_SUh3MKHpCb5REQsIjo5HEZEb4Mz_aqbNKULDp3cEAG0RWmA_avLX_bHFhWs1R9omGX3lM9WDojkZnb3-wBO4ooqSYflXweHmU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/billing-summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"billing-summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiNDE3Y2I2YmU2ZGQ0YzhhOTA4MTVkOTBhYTViZjc1ZTVjY2ZkMzM3YmVhMzVjZDdiMTZmM2NiZGZmYzBhNjA5MTgzM2JlYzczZDNlNWZmNTMiLCJpYXQiOjE3NTA1OTMwMzEuMDEyNzI3LCJuYmYiOjE3NTA1OTMwMzEuMDEyNzI4LCJleHAiOjE3ODIxMjkwMzEuMDEwNzQ5LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.MnIYPEF64xwQieJGqRVBjniwO_CkPv9sKwk7b6wt7PPvso1F6vuBf0gJlnmElyYcK-tD8yts11qMsEEozLztPOGV_ygb9pchfqkgu6IH_lvjEci20Qjmk7LP8mbCi6fESuha411LN-vEs-phkiNGqR64GoEbBgjqVhslVucXHttkozWvOVpwzJ_CcgbYwi63W60nfgz_MBDbOGUu6Rea7pVmVysvFHmwpk3IiJiO8YFlWr4Sxk9iIuc44pY8Ej1A6Q8WEKChMh1izCUdyu3eBfdg8de2XM5AgpXguoCjdXm5zL-QCCSt-cflCyeEoQUYr30vf8DdnPqJacUQWs4dfb8bBEUiTPCDns3Zk4XrJCYWND6yVOpmKomAD5SIRBFwP1_od1JZYrymA9wvRBH95qkn9UGWK7CGqnsnnj1tXD3OcKP4JSZl__vjhvur9uIxooSjWaFvVJgj023qL4V32b2Nf6exy2lBF4J71-nN7z1iPpkKcfjHf22d18EmQhE6UvtBnlF0OcnfUs315QJPhTB8OyrVrONS9s_ELaUgj3VsOuvNjo-k0P-4JSFCWJ_iRKk6UuWiK_SUh3MKHpCb5REQsIjo5HEZEb4Mz_aqbNKULDp3cEAG0RWmA_avLX_bHFhWs1R9omGX3lM9WDojkZnb3-wBO4ooqSYflXweHmU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
