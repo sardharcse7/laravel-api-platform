@@ -22,7 +22,7 @@ A modular, rate-limited API platform supporting user authentication, subscriptio
 ## Setup
 
 ```bash
-git clone https://github.com/your-username/laravel-api-platform.git
+git clone https://github.com/sardharcse7/laravel-api-platform.git
 cd laravel-api-platform
 
 composer install
